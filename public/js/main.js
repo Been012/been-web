@@ -66,7 +66,7 @@ async function loadProjects() {
                 .join("");
 
             card.innerHTML = `
-                ${p.image ? `<img class="project-img" src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}" />` : ""}
+                ${p.image ? `<img class="project-img" src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}" loading="lazy" />` : ""}
                 <h3>${escapeHtml(p.title)}</h3>
                 <p>${escapeHtml(p.description)}</p>
                 <div class="tags">${tags}</div>
