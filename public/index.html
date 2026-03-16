@@ -4,6 +4,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Been | Portfolio</title>
+    <meta name="description" content="Been's personal portfolio — projects, experiments, and a guestbook." />
+    <meta property="og:title" content="Been | Portfolio" />
+    <meta property="og:description" content="Been's personal portfolio — projects, experiments, and a guestbook." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/profile.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>B</text></svg>" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -16,8 +23,14 @@
             <a href="#projects">Projects</a>
             <a href="#guestbook">Guestbook</a>
         </div>
+        <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
         <a href="#contact" class="nav-contact">Contact Me</a>
     </nav>
+    <div class="mobile-menu">
+        <a href="#projects">Projects</a>
+        <a href="#guestbook">Guestbook</a>
+        <a href="#contact">Contact Me</a>
+    </div>
 
     <main>
         <header id="hero">
@@ -52,6 +65,14 @@
         <section id="guestbook">
             <h2>Guestbook</h2>
             <form id="comment-form">
+                <input
+                    type="text"
+                    name="website"
+                    id="comment-honeypot"
+                    autocomplete="off"
+                    tabindex="-1"
+                    aria-hidden="true"
+                />
                 <input
                     type="text"
                     id="comment-name"

@@ -1,3 +1,17 @@
+// === Mobile Menu Toggle ===
+const navToggle = document.querySelector(".nav-toggle");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+navToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("open");
+});
+
+mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+    });
+});
+
 // === Typing Animation ===
 const phrases = [
     "Welcome to my site.",
@@ -48,7 +62,7 @@ async function loadProjects() {
             card.className = "project-card";
 
             const tags = p.tags
-                .map((t) => `<span class="tag">${t}</span>`)
+                .map((t) => `<span class="tag">${escapeHtml(t)}</span>`)
                 .join("");
 
             card.innerHTML = `
@@ -101,6 +115,9 @@ async function loadComments() {
 
 commentForm.addEventListener("submit", async (e) => {
     e.preventDefault();
+    const honeypot = document.getElementById("comment-honeypot").value;
+    if (honeypot) return; // bot filled the hidden field
+
     const name = document.getElementById("comment-name").value.trim();
     const message = document.getElementById("comment-message").value.trim();
     if (!name || !message) return;
@@ -113,7 +130,7 @@ commentForm.addEventListener("submit", async (e) => {
         const res = await fetch("/api/comments", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ name, message }),
+            body: JSON.stringify({ name, message, website: honeypot }),
         });
 
         if (res.ok) {

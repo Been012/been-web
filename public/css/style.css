@@ -89,6 +89,56 @@ nav {
     opacity: 0.8;
 }
 
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+/* === Mobile Menu === */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+    flex-direction: column;
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+    z-index: 999;
+}
+
+.mobile-menu.open {
+    display: flex;
+}
+
+.mobile-menu a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-decoration: none;
+}
+
+.mobile-menu a:hover {
+    color: var(--text);
+}
+
+/* === Honeypot (hidden from humans) === */
+#comment-honeypot {
+    position: absolute;
+    left: -9999px;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+}
+
 /* === Main === */
 main {
     max-width: 720px;
@@ -355,8 +405,13 @@ footer {
         display: none;
     }
 
-    .nav-contact {
+    .nav-toggle {
+        display: block;
         justify-self: end;
+    }
+
+    .nav-contact {
+        display: none;
     }
 
     #hero {

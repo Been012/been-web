@@ -5,6 +5,9 @@ const { insertComment, getComments } = require("./db");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Trust Nginx reverse proxy so req.ip returns the real client IP
+app.set("trust proxy", 1);
+
 // Middleware
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "..", "public")));
@@ -42,14 +45,6 @@ setInterval(() => {
     }
 }, 5 * 60_000);
 
-// Sanitize input
-function sanitize(str) {
-    return str.replace(/[<>&"']/g, (ch) => {
-        const map = { "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;", "'": "&#39;" };
-        return map[ch];
-    });
-}
-
 // Routes
 app.get("/api/comments", (_req, res) => {
     const comments = getComments.all();
@@ -57,7 +52,12 @@ app.get("/api/comments", (_req, res) => {
 });
 
 app.post("/api/comments", rateLimit, (req, res) => {
-    const { name, message } = req.body;
+    const { name, message, website } = req.body;
+
+    // Honeypot: if the hidden field is filled, silently reject
+    if (website) {
+        return res.status(201).json({ success: true });
+    }
 
     if (!name || !message || typeof name !== "string" || typeof message !== "string") {
         return res.status(400).json({ error: "Name and message are required." });
@@ -74,10 +74,7 @@ app.post("/api/comments", rateLimit, (req, res) => {
         return res.status(400).json({ error: "Message must be 1-500 characters." });
     }
 
-    const safeName = sanitize(trimmedName);
-    const safeMessage = sanitize(trimmedMessage);
-
-    insertComment.run(safeName, safeMessage);
+    insertComment.run(trimmedName, trimmedMessage);
     res.status(201).json({ success: true });
 });
 
