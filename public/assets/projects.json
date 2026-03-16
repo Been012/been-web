@@ -8,7 +8,7 @@
     },
   {
     "title": "Home Assistant via Cloudflare Tunnel",
-    "description": "Securley exposed a self-hosted Home Assistant instance to the internet via a cloudflare tunnel with zero-trust access implemented for remote control of home automation.",
+    "description": "Securely exposed a self-hosted Home Assistant instance to the internet via a cloudflare tunnel with zero-trust access implemented for remote control of home automation.",
     "url": "https://github.com/Been012",
     "tags": [ "homeassistant", "cloudflare", "networking", "Security" ]
   }
