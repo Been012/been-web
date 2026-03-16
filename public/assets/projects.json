@@ -1,13 +1,15 @@
 [
     {
-        "title": "Sample Project",
-        "description": "A placeholder project. Replace this with your real projects!",
+        "title": "Pixel Valley",
+        "description": "A animal crossing & Stardew valley inspried game built in Godot",
+        "image": "assets/img/pixel_valley.png",
         "url": "https://github.com/Been012",
-        "tags": ["placeholder"]
+        "tags": ["godot", "game-dev", "3d", "life-sim", "gdscript"]
     },
     {
         "title": "Another Project",
         "description": "Another placeholder. Edit assets/projects.json to update.",
+        "image": "assets/img/project2.png",
         "url": "https://github.com/Been012",
         "tags": ["demo", "example"]
     }

@@ -66,10 +66,11 @@ async function loadProjects() {
                 .join("");
 
             card.innerHTML = `
+                ${p.image ? `<img class="project-img" src="${escapeHtml(p.image)}" alt="${escapeHtml(p.title)}" />` : ""}
                 <h3>${escapeHtml(p.title)}</h3>
                 <p>${escapeHtml(p.description)}</p>
                 <div class="tags">${tags}</div>
-                ${p.url ? `<br><a href="${escapeHtml(p.url)}" target="_blank" rel="noopener">&gt; View Project</a>` : ""}
+                ${p.url ? `<a href="${escapeHtml(p.url)}" target="_blank" rel="noopener">View Project &rarr;</a>` : ""}
             `;
             grid.appendChild(card);
         });

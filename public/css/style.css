@@ -238,6 +238,13 @@ section h2 {
     border-color: #333;
 }
 
+.project-img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+}
+
 .project-card h3 {
     font-size: 0.95rem;
     font-weight: 600;
