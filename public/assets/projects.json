@@ -6,11 +6,10 @@
         "url": "https://github.com/Been012",
         "tags": ["godot", "game-dev", "3d", "life-sim", "gdscript"]
     },
-    {
-        "title": "Another Project",
-        "description": "Another placeholder. Edit assets/projects.json to update.",
-        "image": "assets/img/project2.png",
-        "url": "https://github.com/Been012",
-        "tags": ["demo", "example"]
-    }
+  {
+    "title": "Home Assistant via Cloudflare Tunnel",
+    "description": "Securley exposed a self-hosted Home Assistant instance to the internet via a cloudflare tunnel with zero-trust access implemented for remote control of home automation.",
+    "url": "https://github.com/Been012",
+    "tags": [ "homeassistant", "cloudflare", "networking", "Security" ]
+  }
 ]
