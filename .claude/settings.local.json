@@ -4,7 +4,8 @@
       "Bash(cd \"C:/Users/Been/source/repos/Been012/been-web\" && npm init -y 2>&1)",
       "Bash(cd \"C:/Users/Been/source/repos/Been012/been-web\" && npm install express better-sqlite3 2>&1)",
       "Bash(cd \"C:/Users/Been/source/repos/Been012/been-web\" && timeout 5 node server/index.js 2>&1 || true)",
-      "WebFetch(domain:www.zachjordan.io)"
+      "WebFetch(domain:www.zachjordan.io)",
+      "Bash(cd \"C:/Users/Been/source/repos/Been012/been-web\" && npm install helmet)"
     ]
   }
 }

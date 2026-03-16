@@ -21,6 +21,7 @@
   "homepage": "https://github.com/Been012/been-web#readme",
   "dependencies": {
     "better-sqlite3": "^12.8.0",
-    "express": "^5.2.1"
+    "express": "^5.2.1",
+    "helmet": "^8.1.0"
   }
 }
