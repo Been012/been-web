@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Been | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <nav>
+        <a href="#hero" class="nav-logo">Been</a>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#guestbook">Guestbook</a>
+        </div>
+        <a href="#contact" class="nav-contact">Contact Me</a>
+    </nav>
+
+    <main>
+        <header id="hero">
+            <div class="hero-photo">
+                <img src="assets/img/profile.jpg" alt="Photo of Been" />
+            </div>
+            <h1>Hey, I'm <span class="highlight">Been</span>.</h1>
+            <p class="tagline">
+                <span id="typed-text"></span><span class="cursor">|</span>
+            </p>
+        </header>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>
+                    Hello! Welcome to my corner of the internet.
+                    I like building things and tinkering with technology.
+                </p>
+                <p>
+                    This is where I showcase my projects and experiments.
+                    Feel free to look around and leave a message in the guestbook!
+                </p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div id="project-grid"></div>
+        </section>
+
+        <section id="guestbook">
+            <h2>Guestbook</h2>
+            <form id="comment-form">
+                <input
+                    type="text"
+                    id="comment-name"
+                    placeholder="Your name"
+                    maxlength="50"
+                    required
+                />
+                <textarea
+                    id="comment-message"
+                    placeholder="Leave a message..."
+                    maxlength="500"
+                    rows="4"
+                    required
+                ></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="comment-list"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="contact-content">
+                <p>Want to get in touch? Reach out to me:</p>
+                <ul class="contact-links">
+                    <li><a href="https://github.com/Been012" target="_blank" rel="noopener">GitHub</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Been</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Sample Project",
+        "description": "A placeholder project. Replace this with your real projects!",
+        "url": "https://github.com/Been012",
+        "tags": ["placeholder"]
+    },
+    {
+        "title": "Another Project",
+        "description": "Another placeholder. Edit assets/projects.json to update.",
+        "url": "https://github.com/Been012",
+        "tags": ["demo", "example"]
+    }
+]
