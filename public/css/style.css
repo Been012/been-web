@@ -214,9 +214,48 @@ section h2 {
 }
 
 /* === About === */
+.about-intro {
+    font-size: 1.3rem;
+    color: var(--text);
+    margin-bottom: 1rem;
+}
+
 .about-content p {
     color: var(--text-muted);
     margin-bottom: 0.75rem;
+}
+
+.about-content strong {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.about-content em {
+    color: var(--text);
+}
+
+.about-content blockquote {
+    border-left: 3px solid var(--accent);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    color: var(--text);
+    font-style: italic;
+}
+
+.interest-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.interest-tag {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.75rem;
+    color: var(--accent);
+    background: rgba(68, 170, 255, 0.1);
+    padding: 0.3rem 0.7rem;
+    border-radius: 4px;
 }
 
 /* === Projects === */
