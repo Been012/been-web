@@ -23,6 +23,11 @@ app.use(helmet({
             formAction: ["'self'"],
         },
     },
+    strictTransportSecurity: {
+        maxAge: 31536000,
+        includeSubDomains: true,
+        preload: true,
+    },
 }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "..", "public")));
