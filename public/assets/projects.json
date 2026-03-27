@@ -11,5 +11,11 @@
     "description": "Securely exposed a self-hosted Home Assistant instance to the internet via a cloudflare tunnel with zero-trust access implemented for remote control of home automation.",
     "url": "https://github.com/Been012",
     "tags": [ "homeassistant", "cloudflare", "networking", "Security" ]
+  },
+  {
+    "title": "DF-Story Teller",
+    "description": "AI Driven dwarf fortress story generator. Legends mode reader, live event viewer and dfhack integration used together to generate a narrative that fits your world",
+    "url": "https://github.com/Been012/df-storyteller",
+    "tags": [ "ai", "game-dev", "scripting"]
   }
 ]
