@@ -140,22 +140,11 @@ nav {
 .mobile-menu a:hover {
     color: var(--text);
 }
-
-/* === Honeypot (hidden from humans) === */
-#comment-honeypot {
-    position: absolute;
-    left: -9999px;
-    opacity: 0;
-    height: 0;
-    width: 0;
-    overflow: hidden;
-}
-
 /* === Main === */
 main {
-    max-width: 720px;
+    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 1.5rem;
+    padding: 0 2.5rem;
 }
 
 /* === Hero === */
@@ -359,86 +348,6 @@ section h2 {
 
 .contact-links a:hover {
     text-decoration: underline;
-}
-
-/* === Guestbook === */
-#comment-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    margin-bottom: 2rem;
-}
-
-#comment-form input,
-#comment-form textarea {
-    font-family: "Inter", sans-serif;
-    font-size: 0.9rem;
-    background: var(--surface);
-    color: var(--text);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 0.75rem;
-    outline: none;
-    resize: vertical;
-    transition: border-color 0.2s;
-}
-
-#comment-form input:focus,
-#comment-form textarea:focus {
-    border-color: var(--accent);
-}
-
-#comment-form button {
-    font-family: "Inter", sans-serif;
-    font-size: 0.85rem;
-    font-weight: 600;
-    background: var(--accent);
-    color: var(--bg);
-    border: none;
-    border-radius: 6px;
-    padding: 0.65rem 1.5rem;
-    cursor: pointer;
-    align-self: flex-start;
-    transition: opacity 0.2s;
-}
-
-#comment-form button:hover {
-    opacity: 0.85;
-}
-
-#comment-form button:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-}
-
-.comment {
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 1rem;
-    margin-bottom: 0.75rem;
-    background: var(--surface);
-}
-
-.comment-header {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 0.4rem;
-    font-size: 0.8rem;
-}
-
-.comment-name {
-    font-weight: 600;
-    color: var(--text);
-}
-
-.comment-date {
-    color: var(--text-muted);
-}
-
-.comment-message {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    word-wrap: break-word;
 }
 
 /* === Footer === */
