@@ -7,6 +7,12 @@
         "tags": ["godot", "game-dev", "3d", "life-sim", "gdscript"]
     },
   {
+    "title": "Personal Portfolio Site",
+    "description": "This site. Built from scratch with vanilla HTML, CSS and JS. Initially self-hosted on a home server exposed via Cloudflare Tunnel, then migrated to GitHub Pages.",
+    "url": "https://github.com/Been012/been-web",
+    "tags": ["web", "self-hosting", "cloudflare", "github-pages"]
+  },
+  {
     "title": "Home Assistant via Cloudflare Tunnel",
     "description": "Securely exposed a self-hosted Home Assistant instance to the internet via a cloudflare tunnel with zero-trust access implemented for remote control of home automation.",
     "url": "https://github.com/Been012",
