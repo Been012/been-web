@@ -13,6 +13,18 @@
     "tags": [ "homeassistant", "cloudflare", "networking", "Security" ]
   },
   {
+    "title": "AI Game Assistant",
+    "description": "Built an AI game assistant with OCR, Voice command recognition and gamesave analysis to provide accurate and spoiler free lore hands free whilst playing the game. E.g: QuestLog, who is Paarthurnax?",
+    "url": "https://github.com/Been012",
+    "tags": [ "ai" ]
+  },
+  {
+    "title": "DF-Portait",
+    "description": "Reverse engineered dwarf fortress's sprite compositor to get accurate charachter portaits through available DFHack data. Originally integrated in DF-Story Teller, made standalone and open source for use in other projects and the community",
+    "url": "https://github.com/Been012",
+    "tags": [ "scripting", "game-dev", "ai" ]
+  },
+  {
     "title": "DF-Story Teller",
     "description": "AI Driven dwarf fortress story generator. Legends mode reader, live event viewer and dfhack integration used together to generate a narrative that fits your world",
     "url": "https://github.com/Been012/df-storyteller",
