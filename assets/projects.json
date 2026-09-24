@@ -1,12 +1,8 @@
 [
   {
     "title": "DF-Story Teller",
-    "description": "Turning Dwarf Fortress worlds into stories. Legends data, live events and DFHack integration come together to generate narratives grounded in the world you're playing.",
+    "description": "An AI storytelling tool for Dwarf Fortress. Uses Legends data, live events and DFHack to generate stories based on your world.",
     "url": "https://github.com/Been012/df-storyteller",
-    "linkLabel": "Explore the repository",
-    "category": "ai",
-    "visual": "story",
-    "featured": true,
     "tags": [
       "AI",
       "Game development",
@@ -15,9 +11,7 @@
   },
   {
     "title": "AI Game Assistant",
-    "description": "A hands-free companion for in-game lore. Combines OCR, voice commands and save-file analysis to answer questions with context and help avoid spoilers.",
-    "category": "ai",
-    "visual": "assistant",
+    "description": "A voice-controlled game assistant that uses OCR and save-file analysis to answer questions about in-game lore while avoiding spoilers.",
     "private": true,
     "tags": [
       "AI",
@@ -28,11 +22,8 @@
   },
   {
     "title": "DF-Portrait",
-    "description": "Recreating Dwarf Fortress character portraits from DFHack data by reverse engineering the game's sprite compositor. Developed for DF-Story Teller, then made standalone and open source.",
+    "description": "A standalone portrait tool that recreates Dwarf Fortress characters from DFHack data. Originally part of DF-Story Teller, now open source.",
     "url": "https://github.com/Been012/df-portrait-compositor",
-    "linkLabel": "Explore the repository",
-    "category": "games",
-    "visual": "portrait",
     "tags": [
       "Game development",
       "Scripting",
@@ -41,9 +32,7 @@
   },
   {
     "title": "Home Assistant + Cloudflare",
-    "description": "Remote home automation through a Cloudflare Tunnel, with Zero Trust access controls around a self-hosted Home Assistant instance.",
-    "category": "systems",
-    "visual": "network",
+    "description": "My Home Assistant setup, accessed remotely through a Cloudflare Tunnel with Zero Trust access controls.",
     "tags": [
       "Networking",
       "Cloudflare",
@@ -52,11 +41,8 @@
   },
   {
     "title": "Personal Portfolio",
-    "description": "A lightweight home for my work, built with HTML, CSS and JavaScript. Originally self-hosted through a Cloudflare Tunnel; now served by GitHub Pages.",
+    "description": "This website. Built with HTML, CSS and JavaScript, and hosted on GitHub Pages. Previously self-hosted through a Cloudflare Tunnel.",
     "url": "https://github.com/Been012/been-web",
-    "linkLabel": "View the source",
-    "category": "web",
-    "visual": "web",
     "tags": [
       "HTML / CSS / JS",
       "GitHub Pages"
