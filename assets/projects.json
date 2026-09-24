@@ -1,39 +1,51 @@
 [
-    {
-        "title": "Pixel Valley",
-        "description": "A animal crossing & Stardew valley inspried game built in Godot",
-        "image": "assets/img/pixel_valley.png",
-        "url": "https://github.com/Been012",
-        "tags": ["godot", "game-dev", "3d", "life-sim", "gdscript"]
-    },
   {
-    "title": "Personal Portfolio Site",
-    "description": "This site. Built from scratch with vanilla HTML, CSS and JS. Initially self-hosted on a home server exposed via Cloudflare Tunnel, then migrated to GitHub Pages.",
-    "url": "https://github.com/Been012/been-web",
-    "tags": ["web", "self-hosting", "cloudflare", "github-pages"]
-  },
-  {
-    "title": "Home Assistant via Cloudflare Tunnel",
-    "description": "Securely exposed a self-hosted Home Assistant instance to the internet via a cloudflare tunnel with zero-trust access implemented for remote control of home automation.",
-    "url": "https://github.com/Been012",
-    "tags": [ "homeassistant", "cloudflare", "networking", "Security" ]
+    "title": "DF-Story Teller",
+    "description": "An AI storytelling tool for Dwarf Fortress. Uses Legends data, live events and DFHack to generate stories based on your world.",
+    "url": "https://github.com/Been012/df-storyteller",
+    "tags": [
+      "AI",
+      "Game development",
+      "DFHack"
+    ]
   },
   {
     "title": "AI Game Assistant",
-    "description": "Built an AI game assistant with OCR, Voice command recognition and gamesave analysis to provide accurate and spoiler free lore hands free whilst playing the game. E.g: QuestLog, who is Paarthurnax?",
-    "url": "https://github.com/Been012",
-    "tags": [ "ai" ]
+    "description": "A voice-controlled game assistant that uses OCR and save-file analysis to answer questions about in-game lore while avoiding spoilers.",
+    "private": true,
+    "tags": [
+      "AI",
+      "OCR",
+      "Voice recognition",
+      "private"
+    ]
   },
   {
-    "title": "DF-Portait",
-    "description": "Reverse engineered dwarf fortress's sprite compositor to get accurate charachter portaits through available DFHack data. Originally integrated in DF-Story Teller, made standalone and open source for use in other projects and the community",
-    "url": "https://github.com/Been012",
-    "tags": [ "scripting", "game-dev", "ai" ]
+    "title": "DF-Portrait",
+    "description": "A standalone portrait tool that recreates Dwarf Fortress characters from DFHack data. Originally part of DF-Story Teller, now open source.",
+    "url": "https://github.com/Been012/df-portrait-compositor",
+    "tags": [
+      "Game development",
+      "Scripting",
+      "DFHack"
+    ]
   },
   {
-    "title": "DF-Story Teller",
-    "description": "AI Driven dwarf fortress story generator. Legends mode reader, live event viewer and dfhack integration used together to generate a narrative that fits your world",
-    "url": "https://github.com/Been012/df-storyteller",
-    "tags": [ "ai", "game-dev", "scripting"]
+    "title": "Home Assistant + Cloudflare",
+    "description": "My Home Assistant setup, accessed remotely through a Cloudflare Tunnel with Zero Trust access controls.",
+    "tags": [
+      "Networking",
+      "Cloudflare",
+      "Home Assistant"
+    ]
+  },
+  {
+    "title": "Personal Portfolio",
+    "description": "This website. Built with HTML, CSS and JavaScript, and hosted on GitHub Pages. Previously self-hosted through a Cloudflare Tunnel.",
+    "url": "https://github.com/Been012/been-web",
+    "tags": [
+      "HTML / CSS / JS",
+      "GitHub Pages"
+    ]
   }
 ]
