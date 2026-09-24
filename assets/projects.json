@@ -1,39 +1,65 @@
 [
-    {
-        "title": "Pixel Valley",
-        "description": "A animal crossing & Stardew valley inspried game built in Godot",
-        "image": "assets/img/pixel_valley.png",
-        "url": "https://github.com/Been012",
-        "tags": ["godot", "game-dev", "3d", "life-sim", "gdscript"]
-    },
   {
-    "title": "Personal Portfolio Site",
-    "description": "This site. Built from scratch with vanilla HTML, CSS and JS. Initially self-hosted on a home server exposed via Cloudflare Tunnel, then migrated to GitHub Pages.",
-    "url": "https://github.com/Been012/been-web",
-    "tags": ["web", "self-hosting", "cloudflare", "github-pages"]
-  },
-  {
-    "title": "Home Assistant via Cloudflare Tunnel",
-    "description": "Securely exposed a self-hosted Home Assistant instance to the internet via a cloudflare tunnel with zero-trust access implemented for remote control of home automation.",
-    "url": "https://github.com/Been012",
-    "tags": [ "homeassistant", "cloudflare", "networking", "Security" ]
+    "title": "DF-Story Teller",
+    "description": "Turning Dwarf Fortress worlds into stories. Legends data, live events and DFHack integration come together to generate narratives grounded in the world you're playing.",
+    "url": "https://github.com/Been012/df-storyteller",
+    "linkLabel": "Explore the repository",
+    "category": "ai",
+    "visual": "story",
+    "featured": true,
+    "tags": [
+      "AI",
+      "Game development",
+      "DFHack"
+    ]
   },
   {
     "title": "AI Game Assistant",
-    "description": "Built an AI game assistant with OCR, Voice command recognition and gamesave analysis to provide accurate and spoiler free lore hands free whilst playing the game. E.g: QuestLog, who is Paarthurnax?",
-    "url": "https://github.com/Been012",
-    "tags": [ "ai" ]
+    "description": "A hands-free companion for in-game lore. Combines OCR, voice commands and save-file analysis to answer questions with context and help avoid spoilers.",
+    "category": "ai",
+    "visual": "assistant",
+    "private": true,
+    "tags": [
+      "AI",
+      "OCR",
+      "Voice recognition",
+      "private"
+    ]
   },
   {
-    "title": "DF-Portait",
-    "description": "Reverse engineered dwarf fortress's sprite compositor to get accurate charachter portaits through available DFHack data. Originally integrated in DF-Story Teller, made standalone and open source for use in other projects and the community",
-    "url": "https://github.com/Been012",
-    "tags": [ "scripting", "game-dev", "ai" ]
+    "title": "DF-Portrait",
+    "description": "Recreating Dwarf Fortress character portraits from DFHack data by reverse engineering the game's sprite compositor. Developed for DF-Story Teller, then made standalone and open source.",
+    "url": "https://github.com/Been012/df-portrait-compositor",
+    "linkLabel": "Explore the repository",
+    "category": "games",
+    "visual": "portrait",
+    "tags": [
+      "Game development",
+      "Scripting",
+      "DFHack"
+    ]
   },
   {
-    "title": "DF-Story Teller",
-    "description": "AI Driven dwarf fortress story generator. Legends mode reader, live event viewer and dfhack integration used together to generate a narrative that fits your world",
-    "url": "https://github.com/Been012/df-storyteller",
-    "tags": [ "ai", "game-dev", "scripting"]
+    "title": "Home Assistant + Cloudflare",
+    "description": "Remote home automation through a Cloudflare Tunnel, with Zero Trust access controls around a self-hosted Home Assistant instance.",
+    "category": "systems",
+    "visual": "network",
+    "tags": [
+      "Networking",
+      "Cloudflare",
+      "Home Assistant"
+    ]
+  },
+  {
+    "title": "Personal Portfolio",
+    "description": "A lightweight home for my work, built with HTML, CSS and JavaScript. Originally self-hosted through a Cloudflare Tunnel; now served by GitHub Pages.",
+    "url": "https://github.com/Been012/been-web",
+    "linkLabel": "View the source",
+    "category": "web",
+    "visual": "web",
+    "tags": [
+      "HTML / CSS / JS",
+      "GitHub Pages"
+    ]
   }
 ]
